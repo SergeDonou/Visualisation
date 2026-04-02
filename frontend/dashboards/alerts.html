@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil — Visualisation Capteurs</title>
+    <title>Alertes</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
@@ -12,21 +12,28 @@
 
     <!-- HEADER -->
     <header class="bg-white shadow p-4 flex justify-between items-center">
-        <h1 class="text-xl font-bold">Visualisation Capteurs</h1>
+        <h1 class="text-xl font-bold">Alertes</h1>
 
         <nav class="space-x-4">
+            <a href="index.html" class="text-blue-600 hover:underline">Accueil</a>
             <a href="dashboard.html" class="text-blue-600 hover:underline">Dashboard</a>
             <a href="history.html" class="text-blue-600 hover:underline">Historique</a>
-            <a href="alerts.html" class="text-blue-600 hover:underline">Alertes</a>
         </nav>
     </header>
 
     <!-- MAIN -->
     <main class="p-6">
-        <section class="bg-white p-6 rounded shadow max-w-xl mx-auto text-center">
-            <h2 class="text-2xl font-semibold mb-4">Bienvenue</h2>
-            <p class="text-gray-600">Choisissez une section dans le menu pour commencer.</p>
+
+        <section class="bg-white p-6 rounded shadow">
+            <h2 class="text-lg font-semibold mb-4">Liste des alertes</h2>
+
+            <ul id="alerts-list" class="space-y-3">
+                <li class="p-4 bg-red-100 border border-red-300 rounded">
+                    Aucune alerte pour le moment.
+                </li>
+            </ul>
         </section>
+
     </main>
 
     <!-- FOOTER -->
